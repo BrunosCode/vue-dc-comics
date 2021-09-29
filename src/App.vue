@@ -4,6 +4,7 @@
     <Main/>
     <Banner/>
     <FooterTop/>
+    <FooterBottom/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import Header from './components/Header.vue'
 import Main from './components/Main.vue'
 import Banner from './components/Banner.vue'
 import FooterTop from './components/FooterTop.vue'
+import FooterBottom from './components/FooterBottom.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     Header,
     Main,
     Banner,
-    FooterTop
+    FooterTop,
+    FooterBottom,
   }
 }
 </script>
