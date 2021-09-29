@@ -7,7 +7,7 @@
         <nav class="c-header__nav">
             <ul class="l-row h-listReset">
                 <li v-for="(link, i) in menu" :key="i">
-                    <a href="link.url" :class="{'active': link.current}"
+                    <a :href="link.url" :class="{'active': link.current}"
                     class="c-header__link c-link">
                         {{link.text}}
                     </a>
@@ -85,7 +85,7 @@ export default {
 @import "../assets/style/common.scss";
 
 .c-header {
-    padding: .5rem;
+    padding: .5rem 0;
 
     &__link {
         margin-right: 1rem;
