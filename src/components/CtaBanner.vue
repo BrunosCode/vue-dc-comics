@@ -1,14 +1,14 @@
 <template>
-<div class="c-footerBottom">
+<div class="c-ctaBanner">
     <div class="l-container l-row l-row--spacebetween">
-        <a class="c-btn c-cta c-footerBottom__btn">Sign-up Now!</a>
+        <a class="c-btn c-cta c-ctaBanner__btn">Sign-up Now!</a>
 
         <div class="l-row">
             <p class="c-cta">Follow now!</p>
-            <ul class="c-footerBottom__iconsLinks h-listReset l-row">
+            <ul class="c-ctaBanner__iconsLinks h-listReset l-row">
                 <li v-for="(link, i) in iconLinks" :key="i">
                     <a :href="link.url"
-                    class="c-footerBottom__link c-btn">
+                    class="c-ctaBanner__link c-btn">
                         <img :src="require(`@/assets/images/${link.img}`)" :alt="link.text"
                         class="c-footerBootom__icon">
                     </a>
@@ -21,7 +21,7 @@
 
 <script>
 export default {
-    name: "FooterBottom",
+    name: "CtaBanner",
     data: function() {
         return {
             iconLinks: [
@@ -59,7 +59,7 @@ export default {
 <style scoped lang="scss">
 @import "../assets/style/variables.scss";
 
-.c-footerBottom {
+.c-ctaBanner {
     background-color: $gray-600;
     padding: 1rem;
     color: $primary;

@@ -4,7 +4,7 @@
         <ul class="c-banner__list l-row l-row--spacebetween h-listReset">
             <li v-for="(link, i) in iconLinks" :key="i">
                 <a :href="link.url"
-                class="c-banner__link c-link l-row">
+                class="c-banner__link c-btn l-row">
                     <img :src="require(`@/assets/images/${link.img}`)" :alt="link.text"
                     class="c-banner__icon">
                     <span class="c-banner__text">{{link.text}}</span>
@@ -66,14 +66,11 @@ export default {
     &__link {
         color: white;
         text-transform: uppercase;
-
-        &:hover {
-            transform: scale(.9);
-        }
     }
 
     &__icon {
-        height: 3rem;
+        height: 2.5rem;
+        vertical-align: middle;
         margin-right: .5rem;
     }
 }

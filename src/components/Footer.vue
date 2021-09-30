@@ -1,6 +1,5 @@
 <template>
-<div :style="{backgroundImage: `url(${require('@/assets/images/footer-bg.jpg')})` }"
-class="c-footerTop">
+<footer class="c-footerTop">
     <div class="l-container l-row l-row--spacebetween">
 
         <nav class="c-footerTop__nav l-col l-wrap">
@@ -17,12 +16,18 @@ class="c-footerTop">
         </nav>
         <img class="c-footerTop__img" src="@/assets/images/dc-logo-bg.png" alt="">
     </div>
-</div>
+    <CtaBanner/>
+</footer>
 </template>
 
 <script>
+import CtaBanner from './CtaBanner.vue'
+
 export default {
-    name: "FooterTop",
+    name: "Footer",
+    components: {
+        CtaBanner
+    },
     data: function() {
         return {
             nav: {
@@ -154,14 +159,14 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/style/variables.scss";
-@import "../assets/style/common.scss";
 
 .c-footerTop {
+    background-image: url("../assets/images/footer-bg.jpg");
     background-position: center;
     background-size: cover;
 
     &__nav {
-        height: 400px;
+        max-height: 400px;
         padding: 2rem 0;
     }
 
@@ -181,6 +186,10 @@ export default {
     &__link {
         color: $gray-300;
         margin-bottom: .25rem;
+
+        &:hover {
+            color: white;
+        }
     }
 
     &__img {
