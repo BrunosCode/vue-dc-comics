@@ -6,7 +6,7 @@
         </a>
         <nav class="c-header__nav">
             <ul class="l-row h-listReset">
-                <li v-for="(link, i) in menu" :key="i">
+                <li v-for="(link, i) in menu" :key="i"  class="h-align--stretch">
                     <a :href="link.url" :class="{'active': link.current}"
                     class="c-header__link c-link">
                         {{link.text}}
@@ -82,20 +82,32 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/style/variables.scss";
-@import "../assets/style/common.scss";
 
 .c-header {
-    padding: .5rem 0;
+    &__logo {
+        height: 5rem;
+    }
+
+    &__nav {
+        height: 7rem;
+    }
 
     &__link {
-        margin-right: 1rem;
+        padding: 0 .5rem;
         color: $gray-400;
         font-weight: 700;
         text-transform: uppercase;
-
+        display: inline-block;
+        line-height: 7rem;
+        
         &.active {
             color: $primary;
-            border-bottom: 1px solid $primary;
+            box-shadow: inset 0 -.3rem $primary;
+        }
+
+        &:hover {
+            background-color: $gray-300;
+            color: white;
         }
     }
 }

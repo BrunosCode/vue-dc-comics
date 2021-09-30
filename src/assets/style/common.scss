@@ -41,6 +41,11 @@
     flex-wrap: wrap;
 }
 
+.h-align--stretch {
+    align-self: stretch;
+}
+
+
 // Components
 .c-link {
     text-decoration: none;

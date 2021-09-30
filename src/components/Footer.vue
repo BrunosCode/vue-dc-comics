@@ -154,6 +154,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/style/variables.scss";
+@import "../assets/style/common.scss";
 
 .c-footerTop {
     background-position: center;
