@@ -1,6 +1,5 @@
 <template>
-<div :style="{backgroundImage: `url(${require('@/assets/images/footer-bg.jpg')})` }"
-class="c-footerTop">
+<div class="c-footerTop">
     <div class="l-container l-row l-row--spacebetween">
 
         <nav class="c-footerTop__nav l-col l-wrap">
@@ -156,6 +155,7 @@ export default {
 @import "../assets/style/variables.scss";
 
 .c-footerTop {
+    background-image: url("~@/assets/images/footer-bg.jpg");
     background-position: center;
     background-size: cover;
 

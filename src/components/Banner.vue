@@ -56,20 +56,24 @@ export default {
 @import "../assets/style/variables.scss";
 
 .c-banner {
-    padding: 2.5rem 0;
+    padding: 2rem 0;
     background-color: $primary;
 
     &__list {
-        padding: 0 2rem;
+        padding: 0 1rem;
     }
 
     &__link {
         color: white;
         text-transform: uppercase;
+
+        &:hover {
+            transform: scale(.9);
+        }
     }
 
     &__icon {
-        height: 2rem;
+        height: 3rem;
         margin-right: .5rem;
     }
 }
