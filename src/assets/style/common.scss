@@ -44,6 +44,20 @@
 // Components
 .c-link {
     text-decoration: none;
+    color: inherit;
+}
+.c-btn {
+    text-decoration: none;
+    border: 1px solid transparent;
+
+    &:hover {
+        cursor: pointer;
+        transform: scale(.9);
+    }
+}
+.c-cta {
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 // Helpers

@@ -162,7 +162,7 @@ export default {
 
     &__nav {
         height: 400px;
-        padding: 2rem;
+        padding: 2rem 0;
     }
 
     &__list {
