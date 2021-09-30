@@ -52,6 +52,7 @@
     color: inherit;
 }
 .c-btn {
+    color: inherit;
     display: inline-block;
     text-decoration: none;
     border: 1px solid transparent;
@@ -71,3 +72,8 @@
     list-style: none;
 }
 
+.h-square {
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
+}

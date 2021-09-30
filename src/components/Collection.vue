@@ -36,7 +36,7 @@ export default {
         grid-template-rows: repeat(2, 1fr);
         column-gap: 1rem;
         row-gap: 1rem;
-        margin: 1rem;
+        margin: 2rem .5rem;
     }
 
     &__titole {
