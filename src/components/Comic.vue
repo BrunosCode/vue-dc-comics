@@ -1,15 +1,15 @@
 <template>
 <div class="c-comic l-col">
-    <img src="https://www.dccomics.com/sites/default/files/styles/covers192x291/public/comic-covers/2020/09/AV1976_01_300-001_HD_5f738f6e39ddd7.18205602.jpg?itok=VgdYdJ01"
-    :alt="comicData" class="c-comic__img">
-    <p class="c-comic__titole">titolo</p>
+    <img :src="comicData.thumb"
+    :alt="comicData.series" class="c-comic__img">
+    <p class="c-comic__titole">{{comicData.series}}</p>
 </div>
 </template>
 
 <script>
 export default {
     name: "Comic",
-    prop: {
+    props: {
         comicData: Object
     },
 }
@@ -20,6 +20,12 @@ export default {
 @import "../assets/style/variables.scss";
 
 .c-comic {
-    width: calc((100% / 6) - 1rem);
+    &__img {
+        width: 100%;
+    }
+    &__titole {
+        margin-top: .5rem;
+        text-transform: uppercase;
+    }
 }
 </style>

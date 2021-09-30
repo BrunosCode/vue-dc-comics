@@ -9,7 +9,7 @@
                 <li v-for="(link, i) in iconLinks" :key="i">
                     <a :href="link.url"
                     class="c-ctaBanner__link c-btn">
-                        <img :src="require(`@/assets/images/${link.img}`)" :alt="link.text"
+                        <img :src="require(`../assets/images/${link.img}`)" :alt="link.text"
                         class="c-footerBootom__icon">
                     </a>
                 </li>

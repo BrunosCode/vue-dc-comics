@@ -5,7 +5,7 @@
             <li v-for="(link, i) in iconLinks" :key="i">
                 <a :href="link.url"
                 class="c-banner__link c-btn l-row">
-                    <img :src="require(`@/assets/images/${link.img}`)" :alt="link.text"
+                    <img :src="require(`../assets/images/${link.img}`)" :alt="link.text"
                     class="c-banner__icon">
                     <span class="c-banner__text">{{link.text}}</span>
                 </a>

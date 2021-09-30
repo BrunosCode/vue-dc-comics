@@ -14,7 +14,7 @@
                 </li>
             </ul>
         </nav>
-        <img class="c-footerTop__img" src="@/assets/images/dc-logo-bg.png" alt="">
+        <img class="c-footerTop__img" src="../assets/images/dc-logo-bg.png" alt="">
     </div>
     <CtaBanner/>
 </footer>

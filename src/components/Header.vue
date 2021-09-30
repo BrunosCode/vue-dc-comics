@@ -2,7 +2,7 @@
 <div class="c-header">
     <div class="l-container l-row l-row--spacebetween">
         <a href="#">
-            <img  class="c-header__logo" src="@/assets/images/dc-logo.png" alt="DC Logo">
+            <img  class="c-header__logo" src="../assets/images/dc-logo.png" alt="DC Logo">
         </a>
         <nav class="c-header__nav">
             <ul class="l-row h-listReset">
