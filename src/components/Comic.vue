@@ -5,7 +5,7 @@
             <img :src="comicData.thumb"
             :alt="comicData.series" class="c-comic__squaredImg">
         </div>
-        <p class="c-comic__titole">{{comicData.series}}</p>
+        <p class="c-comic__title">{{comicData.series}}</p>
     </a>
 </div>
 </template>
@@ -40,7 +40,7 @@ export default {
             object-position: top center;
     }
 
-    &__titole {
+    &__title {
         margin-top: .5rem;
         text-transform: uppercase;
         font-size: .875rem;

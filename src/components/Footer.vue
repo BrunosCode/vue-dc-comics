@@ -6,7 +6,7 @@
             <ul v-for="(list, i) in nav" :key="i" 
             class="c-footerTop__list h-listReset">
                 <li>
-                    <h3 class="c-footerTop__subtitle">{{list.titole}}</h3>
+                    <h3 class="c-footerTop__subtitle">{{list.title}}</h3>
                 </li>
                 <li v-for="(link, i) in list.links" :key="i">
                     <a :href="link.url"
@@ -32,7 +32,7 @@ export default {
         return {
             nav: {
                 comicsLinks: {
-                    titole: "DC Comics",
+                    title: "DC Comics",
                     links: [
                         {
                             text: "Characters",
@@ -65,7 +65,7 @@ export default {
                     ],
                 },
                 shopLinks: {
-                    titole: "Shop",
+                    title: "Shop",
                     links: [
                         {
                             text: "Shop DC",
@@ -78,7 +78,7 @@ export default {
                     ],
                 },
                 dcLinks: {
-                    titole: "DC",
+                    title: "DC",
                     links: [
                         {
                             text: "Terms Of Use",
@@ -127,7 +127,7 @@ export default {
                     ],
                 },
                 sitesLinks: {
-                    titole: "Sites",
+                    title: "Sites",
                     links: [
                         {
                             text: "DC",

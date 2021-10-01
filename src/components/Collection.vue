@@ -1,6 +1,6 @@
 <template>
 <div class="c-collection l-container">
-    <h2 class="c-collection__titole">Current Series</h2>
+    <h2 class="c-collection__title">Current Series</h2>
     <div class="c-collection__comics">
         <Comic v-for="(comic, i) in collectionData" :key="i" :comic-data="comic"/>
     </div>
@@ -39,7 +39,7 @@ export default {
         margin: 2rem .5rem;
     }
 
-    &__titole {
+    &__title {
         display: inline-block;
         font-weight: 700;
         text-transform: uppercase;
