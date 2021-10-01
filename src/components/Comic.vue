@@ -1,9 +1,9 @@
 <template>
 <div class="c-comic l-col">
     <a href="#" class="c-btn">
-        <div class="h-square">
+        <div class="l-square">
             <img :src="comicData.thumb"
-            :alt="comicData.series" class="c-comic__img">
+            :alt="comicData.series" class="l-square__img c-comic__img">
         </div>
         <p class="c-comic__titole">{{comicData.series}}</p>
     </a>

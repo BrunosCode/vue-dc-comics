@@ -1,6 +1,6 @@
 <template>
 <div class="c-hero">
-    <img src="../assets/images/jumbotron.jpg" alt="Jumbotron"
+    <img :src="require(`../assets/images/${heroImg}`)" alt="Jumbotron"
     class="c-hero__img">
 </div>
 </template>
@@ -8,6 +8,9 @@
 <script>
 export default {
     name: "Hero",
+    props: {
+        heroImg: String
+    }
 }
 </script>
 

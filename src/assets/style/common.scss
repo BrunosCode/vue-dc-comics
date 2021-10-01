@@ -72,8 +72,17 @@
     list-style: none;
 }
 
-.h-square {
+.l-square {
     padding-top: 100%;
     position: relative;
     overflow: hidden;
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
 }

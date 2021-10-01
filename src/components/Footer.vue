@@ -21,7 +21,7 @@
 </template>
 
 <script>
-import CtaBanner from './CtaBanner.vue'
+import CtaBanner from './CtaBanner.vue';
 
 export default {
     name: "Footer",

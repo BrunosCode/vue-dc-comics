@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import Comic from './Comic.vue'
+import Comic from './Comic.vue';
 
 export default {
     name: "Collection",
