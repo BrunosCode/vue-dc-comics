@@ -1,9 +1,9 @@
 <template>
 <div class="c-comic l-col">
     <a href="#" class="c-btn">
-        <div class="l-square">
+        <div class="c-comic__squaredCover">
             <img :src="comicData.thumb"
-            :alt="comicData.series" class="l-square__img c-comic__img">
+            :alt="comicData.series" class="c-comic__squaredImg">
         </div>
         <p class="c-comic__titole">{{comicData.series}}</p>
     </a>
@@ -24,15 +24,22 @@ export default {
 @import "../assets/style/variables.scss";
 
 .c-comic {
+    &__squaredCover {
+    padding-top: 100%;
+    position: relative;
+    overflow: hidden;
 
-    &__img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        object-fit: contain;
-        object-position: center;
     }
+    &__squaredImg {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+    }
+
     &__titole {
         margin-top: .5rem;
         text-transform: uppercase;
